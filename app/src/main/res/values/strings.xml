@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KotlinAPIGithub</string>
+    <string name="repositories">Repositórios</string>
+    <string name="pull_requests">Pull Requests</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="results_not_found">Nenhum registro encontrado</string>
+    <string name="error">Erro ao carregar registros</string>
+    <string name="author_name">Nome do Autor</string>
+    <string name="repository_name">Nome do Repositório</string>
+    <string name="repository_description">Descrição do Repositório</string>
+    <string name="pull_request_title">Título Pull Request</string>
+    <string name="pull_request_body">Corpo Pull Request</string>
+</resources>
