@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import br.com.kotlinapigithub.data.model.PullRequest
+import br.com.kotlinapigithub.domain.model.PullRequest
 import br.com.kotlinapigithub.databinding.PullRequestItemViewBinding
 import br.com.kotlinapigithub.utilities.DateFormatter
 import com.bumptech.glide.Glide

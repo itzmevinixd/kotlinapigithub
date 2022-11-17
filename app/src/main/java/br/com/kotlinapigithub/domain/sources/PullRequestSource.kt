@@ -1,9 +1,9 @@
-package br.com.kotlinapigithub.data.sources
+package br.com.kotlinapigithub.domain.sources
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import br.com.kotlinapigithub.data.GithubApi
-import br.com.kotlinapigithub.data.model.PullRequest
+import br.com.kotlinapigithub.domain.model.PullRequest
 
 private const val STARTING_PAGE_INDEX = 1
 
@@ -12,15 +12,15 @@ class PullRequestSource(
 ) : PagingSource<Int, PullRequest>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, PullRequest> {
-        val position = params.key ?: STARTING_PAGE_INDEX
+        val page = params.key ?: STARTING_PAGE_INDEX
 
         return try {
-            val response = githubApi.getPullRequests(login, repositoryName, position, params.loadSize)
+            val response = githubApi.getPullRequests(login, repositoryName, page, params.loadSize)
 
             LoadResult.Page(
                 data = response,
-                prevKey = if (position == STARTING_PAGE_INDEX) null else position - 1,
-                nextKey = if (response.isEmpty()) null else position + 1
+                prevKey = if (page == STARTING_PAGE_INDEX) null else page - 1,
+                nextKey = if (response.isEmpty()) null else page + 1
             )
         } catch (exception: Exception) {
             LoadResult.Error(exception)

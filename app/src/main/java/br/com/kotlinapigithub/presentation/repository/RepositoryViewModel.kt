@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import br.com.kotlinapigithub.data.model.Repository
-import br.com.kotlinapigithub.data.repository.GithubRepository
+import br.com.kotlinapigithub.domain.model.Repository
+import br.com.kotlinapigithub.domain.repository.GithubRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

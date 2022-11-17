@@ -1,4 +1,4 @@
-package br.com.kotlinapigithub.data.model
+package br.com.kotlinapigithub.domain.model
 
 import android.os.Parcelable
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties

@@ -1,9 +1,9 @@
-package br.com.kotlinapigithub.data.sources
+package br.com.kotlinapigithub.domain.sources
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import br.com.kotlinapigithub.data.GithubApi
-import br.com.kotlinapigithub.data.model.Repository
+import br.com.kotlinapigithub.domain.model.Repository
 
 private const val STARTING_PAGE_INDEX = 1
 

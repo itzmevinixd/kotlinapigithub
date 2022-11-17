@@ -1,4 +1,4 @@
-package br.com.kotlinapigithub.data.model
+package br.com.kotlinapigithub.domain.model
 
 import android.os.Parcelable
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
@@ -7,6 +7,8 @@ import kotlinx.parcelize.Parcelize
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Parcelize
-data class User(
-    @JsonProperty("login") val login: String, @JsonProperty("avatar_url") val avatarUrl: String
+data class Owner(
+    @JsonProperty("id") val id: Int,
+    @JsonProperty("login") val login: String,
+    @JsonProperty("avatar_url") val avatarUrl: String
 ) : Parcelable

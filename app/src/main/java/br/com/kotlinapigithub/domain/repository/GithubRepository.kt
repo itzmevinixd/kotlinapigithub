@@ -1,11 +1,11 @@
-package br.com.kotlinapigithub.data.repository
+package br.com.kotlinapigithub.domain.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import br.com.kotlinapigithub.data.GithubApi
-import br.com.kotlinapigithub.data.model.Repository
-import br.com.kotlinapigithub.data.sources.RepositorySource
+import br.com.kotlinapigithub.domain.model.Repository
+import br.com.kotlinapigithub.domain.sources.RepositorySource
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

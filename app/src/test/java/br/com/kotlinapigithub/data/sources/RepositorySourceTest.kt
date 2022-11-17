@@ -3,9 +3,10 @@ package br.com.kotlinapigithub.data.sources
 import android.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.paging.PagingSource
 import br.com.kotlinapigithub.data.GithubApi
-import br.com.kotlinapigithub.data.model.Owner
-import br.com.kotlinapigithub.data.model.Repository
+import br.com.kotlinapigithub.domain.model.Owner
+import br.com.kotlinapigithub.domain.model.Repository
 import br.com.kotlinapigithub.data.model.RepositoryResponse
+import br.com.kotlinapigithub.domain.sources.RepositorySource
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.*

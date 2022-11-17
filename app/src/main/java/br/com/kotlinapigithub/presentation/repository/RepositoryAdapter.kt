@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import br.com.kotlinapigithub.R
 import br.com.kotlinapigithub.databinding.RepositoryItemViewBinding
-import br.com.kotlinapigithub.data.model.Repository
+import br.com.kotlinapigithub.domain.model.Repository
 import br.com.kotlinapigithub.presentation.pullrequest.PullRequestActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy

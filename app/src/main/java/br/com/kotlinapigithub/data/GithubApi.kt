@@ -1,6 +1,6 @@
 package br.com.kotlinapigithub.data
 
-import br.com.kotlinapigithub.data.model.PullRequest
+import br.com.kotlinapigithub.domain.model.PullRequest
 import br.com.kotlinapigithub.data.model.RepositoryResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
